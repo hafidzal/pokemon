@@ -2,10 +2,112 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-style{
+  background-color: #fff;
+  text-align: left;
+  display:inline-block;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05), 0 2px 5px 0 rgba(0,0,0,0.05);
 }
+
+.navbar-title-style{
+  display: inline-block;
+  color: #282c34;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 10px;
+  float: left;
+  margin-top: 1.5em;
+  margin-left: 3em;
+}
+
+.navbar-list-style{
+  float: left;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+ul li {
+  font: bold 14px/18px sans-serif;
+  display: inline-block;
+  position: relative;
+  /* margin-left: 2em; */
+  padding: 2em 2em;
+  /* background: brown; */
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #95afc0;
+}
+
+ul li:hover {
+  background: #95afc0;
+  color: #282c34;
+}
+
+li a{
+  color: #282c34;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: #95afc0;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.pokemon-name{
+  color: #535c68;
+  margin-top: 1em;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.pokemon-info ul li{
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  padding: 1.2em;
+  margin: 1em;
+  background-color: #c7ecee;
+  color: #535c68;
+  border-radius: 20px;
+}
+
+.ghibli-wrapper{
+  padding: 2em;
+}
+
+.ghibli-wrapper ul li{
+  display: inline-block;
+  color: #535c68;
+}
+
+.ghibli-wrapper h6{
+  margin: 0;
+}
+
+.ghibli-wrapper p{
+  text-align: justify;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +115,3 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
